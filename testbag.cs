@@ -1,12 +1,12 @@
 ﻿using BepInEx;
 using ItemManager;
 using UnityEngine;
-using KeyManager;
+// using KeyManager;
 
 namespace TestBallBag
 {
     [BepInPlugin(ModGUID, ModName, ModVersion)]
-    [KeyManager.VerifyKey("ModAuthor/ModName", LicenseMode.DedicatedServer)]
+    //[KeyManager.VerifyKey("ModAuthor/ModName", LicenseMode.DedicatedServer)]
     public class ExampleMod : BaseUnityPlugin
     {
         private const string ModName = "TestBallBag";
@@ -20,12 +20,6 @@ namespace TestBallBag
             testBag.Crafting.Add(CraftingTable.Workbench, 1);
             testBag.RequiredItems.Add("Wood", 10);
             testBag.RequiredUpgradeItems.Add("Wood", 5);
-
-            Item testQuiv = new Item("testbag", "JC_Quiver");
-            testQuiv.Crafting.Add(CraftingTable.Workbench, 1);
-            testQuiv.RequiredItems.Add("Wood", 10);
-            testQuiv.RequiredItems.Add("Iron", 5);
-            testQuiv.RequiredUpgradeItems.Add("Iron", 2);
 
         }
 
