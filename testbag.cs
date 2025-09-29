@@ -1,12 +1,10 @@
 ﻿using BepInEx;
 using ItemManager;
 using UnityEngine;
-// using KeyManager;
 
 namespace TestBallBag
 {
     [BepInPlugin(ModGUID, ModName, ModVersion)]
-    //[KeyManager.VerifyKey("ModAuthor/ModName", LicenseMode.DedicatedServer)]
     public class ExampleMod : BaseUnityPlugin
     {
         private const string ModName = "TestBallBag";
